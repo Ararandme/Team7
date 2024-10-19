@@ -1,0 +1,110 @@
+*{
+    border: 1px solid green;
+
+    padding: 1px;
+
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    height: 100px;
+    color: rgb(39, 71, 148);
+}
+
+
+
+.box{
+    padding: 15px;
+}
+
+.box-1{
+    grid-column: span 1,2;
+    background-color: rgb(255, 99, 71) ;
+}
+
+.box-2{
+    grid-column: span 4,8;
+    background-color: red;
+}
+
+
+
+nav ul.Menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+nav ul.Menu li{
+    margin-left: 40px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    margin: 20px;
+}
+
+iframe{
+    margin: 30px;
+}
+
+.btn-1, .btn-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+/* Estilo de los botones */
+.btn-1, .btn-2 {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Contenedor del grid de servicios*/
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+    place-items: center;
+
+
+}
+
+/* Estilo de los cuadrados */
+.caja {
+    height: 300px;
+    width: 300px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
